@@ -32,7 +32,8 @@ function App() {
             onCheck={actions.checkAnswers}
             onNext={actions.handleNext}
           />
-          <NoteDisplay notes={state.notes} />
+          <NoteDisplay 
+            notes={state.notes} />
           <GuessInput
             guesses={state.guesses}
             setGuesses={actions.setGuesses}
