@@ -1,0 +1,17 @@
+.scoreBoard {
+    margin: 1rem;
+    border: 0px solid black;
+    text-align: center;
+}
+
+.next-hint {
+  min-height: 1.5em;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.next-hint.visible {
+  opacity: 1;
+  visibility: visible;
+}

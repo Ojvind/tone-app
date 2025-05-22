@@ -1,11 +1,13 @@
-import React from 'react';
+import './ScoreBoard.css';
 
 function ScoreBoard({ round, totalRounds, score, checked }) {
   return (
-    <div style={{ margin: '1rem', textAlign: 'center' }}>
+    <div className='scoreBoard'>
       <p><strong>Runda:</strong> {round + 1} / {totalRounds}</p>
       <p><strong>Poäng:</strong> {score}</p>
-      {checked && <p>Tryck "Nästa" för att fortsätta.</p>}
+      <p className={`next-hint ${checked ? 'visible' : ''}`}>
+        Tryck "Nästa" för att fortsätta.
+      </p>
     </div>
   );
 }
